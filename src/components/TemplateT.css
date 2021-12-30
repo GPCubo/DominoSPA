@@ -1,0 +1,111 @@
+.TemplateTChatScreen{
+    width: calc(80vw - 20px);
+    max-width: 1440px;
+    margin: 0 20px 20px 20px;
+    height: calc(100vh - 170px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.TemplateTChatScreen-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 20px;
+}
+.TemplateTChatScreen-sponsor{
+    border-radius: 10px;
+}
+.TemplateTChatScreen-title{
+    color: var(--first-color);
+}
+.TemplateTChatScreen-input{
+    height: 30px;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(153, 237, 166);
+    border-radius: 0 0 10px 10px;
+}
+.TemplateTChatScreen-p,.TemplateTChatScreen-p-other{
+    margin: 5px 10px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.TemplateTChatScreen-p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.TemplateTChatScreen-span-other,.TemplateTChatScreen-span-mine{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.TemplateTChatScreen-span-other{
+    text-align: left;
+}
+.TemplateTChatScreen-btn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--first-color);
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.TemplateTChatScreen-btn:nth-of-type(1){
+    bottom: 90px;
+    margin-bottom: 10px;
+}
+.TemplateTChatScreen-input:focus-visible{
+    outline: none;
+}
+.TemplateTChatScreen-span:nth-of-type(1){
+    font-weight: 300;
+    padding: 5px 0;
+}
+
+
+.TemplateTMessageOnChat-main{
+    min-height: 100px;
+    display: flex;
+    overflow: hidden;
+    background-color: var(--first-color);
+    height: calc(100vh - 385px);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.TemplateTMessageOnChat-p{
+    margin:10px;
+    border-radius: 10px;
+    text-align: right;
+    padding:5px 0 ;
+}
+.TemplateTMessageOnChat-p-other{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 10px;
+}
+.TemplateTMessageOnChat-span-other,.TemplateTMessageOnChat-span-mine{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.TemplateTMessageOnChat-span-other{
+    text-align: left;
+}
+.TemplateTMessageOnChat-span-nickname{
+    color: white;
+    font-weight: 500;
+    padding: 5px
+}

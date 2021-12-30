@@ -1,0 +1,97 @@
+.NavTop-nav{
+    display: flex;
+    background-color: var(---middle-gray);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+    border-radius: 10px;
+    background: #e6e6e6;
+    height: 100px;
+    box-shadow:  -5px 5px 10px #cfcfcf,
+                5px -5px 10px #fdfdfd;
+}
+.NavTop-li0,.NavTop-li1,.NavTop-li2,.NavTop-li3,.NavTop-li4,.NavTop-li5,.NavTop-li6{
+    list-style: none;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 20px;
+}
+.NavTop-span{
+    position: relative;
+    top: 8px;
+    font-size: 20px;
+    margin-top: 100px;
+}
+.NavTop-img{
+    cursor: pointer;
+    margin-right: 30px;
+}
+.NavTop-p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-left: 20px;
+    color: var(--first-color);
+}
+.NavTop-label-close{
+    position: fixed;
+    top: 20px;
+    left: -200px;
+    z-index: 100;
+    transition-duration: 0.2s;
+}
+.NavTop-link{
+    text-decoration: none;
+    color: black;
+}
+.NavTop-link{
+    color: white;
+}
+.NavTop-li0,.NavTop-li1,.NavTop-li2,.NavTop-li3,.NavTop-li4,.NavTop-li5,.NavTop-li6{
+    display: block;
+    cursor: pointer;
+    margin: 10px 0 ;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.NavTop-ul{
+    position: fixed;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+    padding: 20px;
+    height: 100%;
+    z-index: 20;
+    color: white;
+    top: -16px ;
+    left: -310px;
+    width: 290px;
+    min-height: 500px;
+    transition-duration: 0.2s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.146);
+}
+.NavTop-inputCheckbox:checked 	~ .NavTop-ul{
+    left: 0;
+}
+.NavTop-inputCheckbox:checked ~ .NavTop-label-close{
+    left: 240px;
+    cursor: pointer;
+}
+.NavTop-inputCheckbox:checked ~ .NavTop-label{
+    display: none;
+}
+.NavTop-inputCheckbox:checked ~ .NavTop-ul::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: rgba(41, 41, 41, 0.674);
+    width: 100vw;
+    right: -100vw;
+    top: 0;
+    height: 100vh;
+    z-index: -50;
+}

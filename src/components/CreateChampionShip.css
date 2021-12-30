@@ -1,0 +1,47 @@
+.CreateChampionShip-form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 640px;
+    margin-bottom: 20px;
+}
+.CreateChampionShip-div-2{
+    display: flex;
+    margin: 0 20px;
+    flex-direction: column;
+}
+.CreateChampionShip-inputText{
+    height: 45px;
+}
+.CreateChampionShip-inputText,.CreateChampionShip-select,.CreateChampionShip-inputDateTime,.CreateChampionShip-inputFile{
+    border: 1px solid green;
+    width: 280px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.CreateChampionShip-select{
+    width: 280px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.CreateChampionShip-div{
+    width: 280px;
+    text-align: center;
+    margin: 20px 0;
+}
+.CreateChampionShip-inputSubmit{
+    border: none;
+    background-color: var(--first-color);
+    cursor: pointer;
+    padding: 10px;
+    width: 310px;
+    color: white;
+}
+@media(max-width:679px){
+    .CreateChampionShip-form{
+        justify-content: center;
+    }
+}

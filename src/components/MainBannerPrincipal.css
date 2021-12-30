@@ -1,0 +1,79 @@
+.MainBannerPrincipal-div{
+    border-radius: 10px;
+    background: #e6e6e6;
+    box-shadow:  -5px 5px 10px #cfcfcf,
+             5px -5px 10px #fdfdfd;
+    width: calc(100vw - 320px);
+    height: 175px;
+    max-width: 1440px;
+    min-width: 270px;
+}
+.MainBannerPrincipal-div-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.MainBannerPrincipal-div-3{
+    border-radius: 10px;
+    background-color: var(--first-color);
+    width: 200px;
+    height: 200px;
+    width: calc((100vw - 350px)/3);
+    min-width: 280px;
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+.MainBannerPrincipal-div-4{
+    margin: 10px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100vw - 320px);
+    max-width: 1440px;
+}
+.MainBannerPrincipal-p{
+    color: white;
+    font-size: 12px;
+    padding: 0;
+}
+.MainBannerPrincipal-p-2{
+    color: white;
+    margin-top: -10px;
+    font-size: 10px;
+}
+.MainBannerPrincipal-div-5{
+    margin-top: 10px;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+background: #e6e6e6;
+box-shadow: inset -5px 5px 10px #c4c4c4,
+            inset 5px -5px 10px #ffffff;
+    border-radius: 10px;
+}
+.MainBannerPrincipal-btn{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+    color: var(--first-color);
+    padding: 5px;
+    width: 100px;
+}
+@media(max-width:576px){
+    .MainBannerPrincipal-div,.MainBannerPrincipal-div-4{
+        margin: 10px;
+        width: calc(100vw - 40px);
+    }
+    .MainBannerPrincipal-div-2{
+        display: flex;
+        flex-direction: column;
+    }
+}

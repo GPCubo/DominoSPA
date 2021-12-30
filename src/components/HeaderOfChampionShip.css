@@ -1,0 +1,108 @@
+
+.HeaderOfChampionShip-div{
+        background-color: var(--first-color);
+        border-radius: 20px;
+        color: white;
+        padding: 20px;
+        min-width: 300px;
+        box-sizing: border-box;
+        max-width: 855px;
+        display: flex;
+        width: calc(100vw - 20px);
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+}
+.HeaderOfChampionShip-div-10{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    width: calc(100vw - 20px);
+    max-width: 600px;
+}
+.HeaderOfChampionShip-div-sponsor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HeaderOfChampionShip-div-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.HeaderOfChampionShip-spanInside{
+    font-weight: 500;
+}
+.HeaderOfChampionShip-img{
+    border-radius: 20px 0px 0px 20px;
+    z-index: -10;
+}
+.HeaderOfChampionShip-btn-crop{
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: var(--first-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.HeaderOfChampionShip-img-2{
+    border-radius: 0 20px 20px 0;
+    z-index: -10;
+}
+.HeaderOfChampionShip-div-3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.HeaderOfChampionShip-p,.HeaderOfChampionShip-p-2,.HeaderOfChampionShip-p-3,.HeaderOfChampionShip-p-4,.HeaderOfChampionShip-p-5,.HeaderOfChampionShip-p-7{
+    display: flex;
+    flex-direction: column;
+    
+}
+.HeaderOfChampionShip-p-5{
+    text-align: center;
+}
+.HeaderOfChampionShip-div-8{
+    margin: 20px;
+    width: 250px;
+    max-height: 250px;
+    text-align: center;
+}
+.HeaderOfChampionShip-div-11{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HeaderOfChampionShip-p-6{
+    color: white;
+    text-align: center;
+}
+.HeaderOfChampionShip-img-sponsor{
+    width: 175px;
+    height: 175px;
+    border-radius: 10px;
+}
+@media(max-width:600px){
+    .HeaderOfChampionShip-div{
+        flex-direction: column;
+    }
+    .HeaderOfChampionShip-img,.HeaderOfChampionShip-img-2{
+        width: 100px;
+        height: 100px;
+    }
+    .HeaderOfChampionShip-img{
+        border-radius: 20px 20px 0 0;
+        width: 200px;
+    }
+    .HeaderOfChampionShip-img-2{
+        width: 200px;
+        border-radius: 0 0  20px 20px;
+    }
+}

@@ -1,0 +1,119 @@
+.PlayersAndTable-div{
+    display: grid;
+    grid-template-areas: "ul ul"
+                         "btn btn";
+    flex-direction: column;
+    min-width:220px;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    border: var(--first-color) 1px solid;
+}
+.PlayersAndTable-ul{
+    width: 200px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.PlayersAndTable-li{
+    font-weight: 500;
+    text-align: center;
+    margin: 3px 0;
+    color: white;
+    background-color: var(--first-color);
+    display: block;
+    padding: 10px;
+    width: 150px;
+}
+.PlayersAndTable-div-2{
+    display: flex;
+    box-sizing: border-box;
+    margin: 20px;
+    flex-wrap: wrap;
+    max-width: 700px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.PlayersAndTable-divWrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.PlayersAndTable-p{
+    height: 100%;
+    display: flex;
+    color: var(--first-color);
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px ;
+    margin: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+.PlayersAndTable-h1{
+    max-width: 106px;
+    text-align: center;
+    display: flex;
+    color: var(--first-color);
+    margin: 0 10px;
+    align-items: center;
+}
+.PlayersAndTable-div-4{
+    align-items: center;
+    height: fit-content;
+    display: flex;
+    border: 1px solid var(--first-color);
+    padding: 10px;
+}
+.PlayersAndTable-div-3{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.PlayersAndTable-span{
+    width: 100%;
+    color: var(--first-color);
+    text-align: center;
+    padding: 10px 0;
+}
+.PlayersAndTable-btn{
+    padding: 20px;
+    border: none;
+    color: white;
+    background-color: var(--first-color);
+    grid-area: btn;
+}
+@media(max-width:868px){
+    .PlayersAndTable-div,.PlayersAndTable-div-2{
+        display: flex;
+        flex-direction: row;
+        width: calc(100vw - 60px);
+        flex-wrap: wrap;
+    }
+    .PlayersAndTable-btn{
+        width: 100%;
+    }
+    .PlayersAndTable-div-2{
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .PlayersAndTable-span{
+        height: initial;
+    }
+    .PlayersAndTable-div-4{
+        align-items: center;
+    }
+}

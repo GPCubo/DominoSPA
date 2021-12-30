@@ -1,0 +1,92 @@
+.ChampionShipCreated-divPrincipal{
+    background-color: var(--first-color);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px 0 ;
+    overflow: hidden;
+    border-radius:20px;
+    height: fit-content;
+}
+.ChampionShipCreated-div--gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 20px;
+    gap: 20px;
+}
+.ChampionShipCreated-divImg{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+.ChampionShipCreated-divImg-2{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+}
+.ChampionShipCreated-divChildOfPrincipal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.ChampionShipCreated-div-1-1{
+    margin:  20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.ChampionShipCreated-span{
+    font-weight: 500;
+}
+.ChampionShipCreated-span--italic{
+    font-style: italic;
+}
+.ChampionShipCreated-p-1-1,.ChampionShipCreated-p-2-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    color: white;
+    margin: 4px 0;
+    justify-content: center;
+}
+.ChampionShipCreated-divChildOfPrincipal:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.ChampionShipCreated-divChildOfPrincipal:nth-child(3){
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+.ChampionShipCreated-img-sponsor{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 150px;
+}
+.ChampionShipCreated-btn-3-1{
+    width: 100%;
+    text-align: center;
+    color: var(--first-color);
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+    padding: 10px 0;
+}
+.ChampionShipCreated-btn-3-1:hover{
+    background-color: var(--first-color);
+    color: white;
+}
+.ChampionShipCreated-btn-3-2{
+    width: 100%;
+    font-weight: 500;
+    border: none;
+    background-color: white;
+    padding: 10px 0;
+}

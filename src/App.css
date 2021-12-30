@@ -1,0 +1,27 @@
+.App-div,.App-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.App-div{
+    flex-wrap: wrap-reverse;
+}
+.App-div-2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1440px;
+    width: 1440px;
+    padding: 0 20px;
+}
+@media(max-width:733px){
+    .App-div-2{
+        justify-content: center;
+    }
+}
+@media(max-width:375px){
+    .App-div-2{
+        padding: 0;
+    }
+}

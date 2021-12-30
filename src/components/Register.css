@@ -1,0 +1,78 @@
+.Register-input,.Reigster-div-gender{
+    border: 1px solid var(--first-color);
+    width: 280px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    height: 40.39px;
+}
+.Register-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Register-div-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Register-div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.Reigster-div-gender{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Register-p-gender{
+    text-align: center;
+    margin: 10px 0 0  0;
+}
+.Register-h1{
+    text-align: center;
+    color: var(--first-color);
+}
+.Register-div-2{
+    display: flex;
+    flex-direction: column;
+}
+.Register-div-margintop{
+    margin-top: 20px;
+}
+.Register-input-submit{
+    margin: 20px 0;
+    border: none;
+    background-color: var(--first-color);
+    cursor: pointer;
+    padding: 10px;
+    width: 310px;
+    color: white;
+}
+.Register-link{
+    color: var(--first-color);
+}
+.Register-select{
+    border: 1px solid var(--first-color);
+    width: 280px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.Register-select-pre{
+    border: 1px solid var(--first-color);
+    width: 70px;
+    margin: 0px 10px 0 0;
+    height: 40.38px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Register-divSelect{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
