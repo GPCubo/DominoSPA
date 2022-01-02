@@ -1,11 +1,81 @@
 .TemplateTChatScreen{
-    width: calc(80vw - 20px);
+    width: calc(45vw - 20px);
     max-width: 1440px;
     margin: 0 20px 20px 20px;
-    height: calc(100vh - 170px);
     border-radius: 10px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+.TemplateTTable-div{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 20px;
+    width: calc(45vw - 100px);
+}
+.TemplateTTableMap-ol{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 0 15px;
+}
+.TemplateTTable-btn{
+    background-color: var(--first-color);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    margin: 0px 30px 10px;
+    font-weight: 500;
+    color: white;
+}
+.TemplateTTableMap-li,.TemplateTTableMap-li-2{
+    margin: 15px 5px;
+    color: white;
+    height: 20px;
+}
+.TemplateTTableMap-li-2{
+    cursor: pointer;
+}
+.TemplateTTableMap-li-2-input{
+    margin: 0;
+    height: 20px;
+    margin: 15px 5px;
+    color: white;
+}
+.TemplateTTableMap-span{
+    width: 12%;
+    font-weight: 500;
+    color: white;
+}
+.TemplateTTable-div-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--first-color);
+    width: calc(100% - 20px);
+    min-width: 280px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 300px;
+    height: calc(100vh - 270px);
+    overflow: scroll;
+}
+.TemplateTTable-p{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.TemplateTTableMap-span-nickname{
+    width: 100px;
+    color: white;
+    font-weight: 500;
     overflow: hidden;
 }
 .TemplateTChatScreen-header{
@@ -52,7 +122,7 @@
     text-align: left;
 }
 .TemplateTChatScreen-btn{
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 20px;
     background-color: var(--first-color);
@@ -65,7 +135,7 @@
     bottom: 90px;
     margin-bottom: 10px;
 }
-.TemplateTChatScreen-input:focus-visible{
+.TemplateTChatScreen-input:focus-visible, .TemplateTInputsMap-input:focus-visible{
     outline: none;
 }
 .TemplateTChatScreen-span:nth-of-type(1){
@@ -108,4 +178,135 @@
     color: white;
     font-weight: 500;
     padding: 5px
+}
+.TemplateTInputsMap-input{
+    border: none;
+    background-color: var(--first-color);
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+}
+.TemplateTInputsMap-input::placeholder{
+    color: rgba(255, 255, 255, 0.509);
+}
+.TemplateTInputsMap-h1{
+    text-align: center;
+}
+.TemplateTNoPlayers-div{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.TemplateTInputsMap-form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.TemplateTInputsMap-btn{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--first-color);
+    grid-area: btn;
+    margin-top: 10px;
+    margin: auto;
+    width: 100vw;
+    max-width: 400px;
+    margin-top: 10px;
+}
+.TemplateTInputsMap-div{
+    display: grid;
+    grid-template-areas:
+        "ul ul"
+        "btn btn"
+        "time time";
+    flex-direction: column;
+    min-width: 220px;
+    grid-gap: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    border: var(--first-color) 1px solid;
+}
+.TemplateTInputsMap-div-TemplateTScore{
+    display: flex;
+    min-width: 220px;
+    grid-gap: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    border: var(--first-color) 1px solid;
+}
+.TemplateTInputsMap-img{
+    grid-area: time;
+    margin: auto;
+}
+.TempateTsettings-div{
+    position: absolute;
+    background-color: white;
+    width: calc(100vw - 20px);
+    max-width: 1440px;
+    margin: 0 20px 20px 20px;
+    min-height: calc(100vh - 150px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition-duration: .5s;
+}
+.TemplateTInputsMap-div:nth-of-type(2){
+    margin: 20px;
+}
+.TemplateTInputsMap-btn:nth-of-type(2){
+    background-color: rgb(227, 57, 57);
+    margin-bottom: 10px;
+}
+.TemplateTInputsMap-div-btn{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 220px;
+    grid-gap: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.TemplateTPlayers-h1{
+    text-align: center;
+}
+.TemplateTChatScreen-div-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.TemplateTSettings-view:checked ~ .TempateTsettings-div{
+    top:150px;
+}
+@media(max-width:1178px){
+    .TemplateTInputsMap-div{
+        display: flex;
+        flex-direction: row;
+        width: calc(80vw - 60px);
+        flex-wrap: wrap;
+    }
+    .TemplateTTable-div,.TemplateTChatScreen{
+        width: calc(100vw - 60px);
+    }
+    .TempateTsettings-div{
+        align-items: center;
+    }
 }

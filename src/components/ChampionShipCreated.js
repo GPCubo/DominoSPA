@@ -30,7 +30,7 @@ function ChampionShipCreated(user) {
             }
         }
         // http://localhost:9000
-        fetching("http://localhost:9000/torneos-activos")
+        fetching("/torneos-activos")
     }, []);
     return ( 
         <>

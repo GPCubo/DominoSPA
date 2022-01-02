@@ -10,7 +10,7 @@ export const TemplateTMessageOnChat = ({user}) => {
         setTimeout(() => {
             if(bucle === true) {setBucle(false)}
             else {setBucle(true)}
-        }, 5000);
+        }, 60000);
     }
 
     useEffect(() => {
