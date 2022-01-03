@@ -64,7 +64,15 @@
     margin-bottom: 10px;
     min-height: 300px;
     height: calc(100vh - 270px);
-    overflow: scroll;
+    overflow: auto;
+}
+.TemplateTTable-div-2::-webkit-scrollbar,.TemplateTMessageOnChat-main::-webkit-scrollbar{
+    width: 7px;
+}
+.TemplateTTable-div-2::-webkit-scrollbar-thumb,.TemplateTMessageOnChat-main::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 3px;
 }
 .TemplateTTable-p{
     width: 100%;

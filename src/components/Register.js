@@ -26,15 +26,13 @@ function Register() {
         const fetching = async(url)=>{
             try {
                 setLoading(true)
-                const sending = await fetch(url,config)
-                const data = await sending.json()
-                const {error,statusText} = data
-                if(error)throw(statusText)
+                const request = await fetch(url,config)
+                if(request.status !== 200){throw request}
                 alert("Usuario Registrado")
                 setLoading(false)
                 window.location.href = "/#/iseccion";
-            } catch (err) {
-                alert(err)
+            } catch (error) {
+                alert(`Error: ${error.status} ${error.statusText} `)
                 setLoading(false)
             }
         }

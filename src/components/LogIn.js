@@ -24,18 +24,17 @@ function LogIn() {
         const fetching = async(url)=>{
             try {
                 setLoading(true)
-                const sending = await fetch(url,config)
-                const data = await sending.json()
-                const {infoU,error,statusText} = data
-                if(error)throw(statusText)
+                const request = await fetch(url,config)
+                if(request.status !== 200){throw request}
+                const data = await request.json()
                 setLoading(false)
-                window.localStorage.setItem('loggedNoteAppUser',JSON.stringify(infoU))
-                setUser(infoU)
+                window.localStorage.setItem('loggedNoteAppUser',JSON.stringify(data))
+                setUser(data)
                 setTimeout(() => {
                     document.getElementById("login-p-create-ac").click()
                 }, 1000);
-            } catch (err) {
-                alert(err)
+            } catch (error) {
+                alert(`Error: ${error.status} ${error.statusText} `)
                 setLoading(false)
             }
         }
